@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    color: #17243b;
+}
+
+#nazwa_header {
+    background: white;
+    padding: 15px 6%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nazwa_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nazwa_nav h2 {
+    color: #2464ad;
+    font-size: 20px;
+}
+
+.nazwa_menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nazwa_menu a {
+    text-decoration: none;
+    color: #17243b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nazwa_menu a:hover {
+    color: #2464ad;
+}
+
+.nazwa_home {
+    background: linear-gradient(110deg, #edf4ff, #d9e9ff);
+    padding: 45px 6%;
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nazwa_intro {
+    width: 55%;
+}
+
+.nazwa_intro h1 {
+    font-size: 38px;
+    margin: 5px 0;
+    color: #17243b;
+}
+
+.nazwa_intro h1 span {
+    color: #2672ce;
+}
+
+.nazwa_intro h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.nazwa_description {
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.nazwa_btn {
+    display: inline-block;
+    background: #2464ad;
+    color: white;
+    padding: 10px 17px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+.nazwa_btn:hover {
+    background: #1b4e8a;
+}
+
+.nazwa_btn2 {
+    background: white;
+    color: #2464ad;
+    border: 1px solid #2464ad;
+}
+
+.nazwa_btn2:hover {
+    background: #2464ad;
+}
+
+.nazwa_hero_image {
+    width: 40%;
+    height: 230px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nazwa_laptop {
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    transform: rotate(-5deg);
+}
+
+.nazwa_laptop_screen {
+    height: 155px;
+    background: linear-gradient(135deg, #142d50, #3269a9);
+    border: 9px solid #26364c;
+    border-radius: 10px;
+    color: #63b4ff;
+    font-size: 55px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.nazwa_laptop_base {
+    width: 115%;
+    height: 12px;
+    background: #8d9db1;
+    margin-left: -7%;
+    border-radius: 3px 3px 12px 12px;
+}
+
+.nazwa_plant {
+    position: absolute;
+    right: -5px;
+    bottom: 15px;
+    font-size: 65px;
+}
+
+.nazwa_about {
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nazwa_about_text {
+    width: 75%;
+}
+
+.nazwa_about h2,
+.nazwa_skills_section h2,
+.nazwa_projects_section h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #17243b;
+}
+
+.nazwa_about h2::after,
+.nazwa_skills_section h2::after,
+.nazwa_projects_section h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #2464ad;
+    margin-top: 5px;
+}
+
+.nazwa_about_text p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #43516a;
+}
+
+.nazwa_information {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+.nazwa_photo {
+    width: 100px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: #dce8f8;
+}
+
+.nazwa_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nazwa_skills_section {
+    padding: 5px 6% 25px;
+}
+
+.nazwa_skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.nazwa_skill {
+    background: #f1f5fa;
+    border: 1px solid #e2e9f2;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nazwa_skill:hover {
+    background: #dceaff;
+    transform: translateY(-3px);
+}
+
+.nazwa_projects_section {
+    padding: 15px 6% 40px;
+}
+
+.nazwa_projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.nazwa_project_card {
+    border: 1px solid #e0e6ef;
+    border-radius: 7px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.nazwa_project_card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.nazwa_project_card img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+}
+
+.nazwa_project_info {
+    padding: 9px;
+}
+
+.nazwa_project_info h3 {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.nazwa_project_info p {
+    font-size: 11px;
+    color: #66748a;
+    min-height: 30px;
+}
+
+.nazwa_project_info a {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 11px;
+    color: #2464ad;
+    text-decoration: none;
+}
+
+#nazwa_footer {
+    background: #172944;
+    color: white;
+    padding: 18px 6% 10px;
+}
+
+.nazwa_footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nazwa_footer_content h3 {
+    font-size: 18px;
+}
+
+.nazwa_footer_content h3 span {
+    color: #63a9f5;
+}
+
+.nazwa_footer_content p {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.nazwa_contact {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nazwa_contact p {
+    font-size: 11px;
+}
+
+#nazwa_footer hr {
+    margin: 15px 0 8px;
+    border: 0;
+    border-top: 1px solid #52647d;
+}
+
+.nazwa_copyright {
+    font-size: 10px;
+    color: #cbd5e1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nazwa_nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nazwa_menu {
+        gap: 18px;
+    }
+
+    .nazwa_home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nazwa_intro {
+        width: 100%;
+    }
+
+    .nazwa_intro h1 {
+        font-size: 30px;
+    }
+
+    .nazwa_hero_image {
+        width: 100%;
+    }
+
+    .nazwa_about {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .nazwa_about_text {
+        width: 100%;
+    }
+
+    .nazwa_photo {
+        align-self: center;
+    }
+
+    .nazwa_skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nazwa_projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nazwa_footer_content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .nazwa_menu {
+        gap: 12px;
+    }
+
+    .nazwa_menu a {
+        font-size: 12px;
+    }
+
+    .nazwa_projects {
+        grid-template-columns: 1fr;
+    }
+}
